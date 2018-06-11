@@ -14,12 +14,8 @@
   },
   "author": "",
   "license": "ISC",
-  "dependencies": {
-    "js-cookie": "^2.2.0"
-  },
-  "peerDependencies": {
-    "js-cookie": "^2.2.0"
-  },
+  "dependencies": {},
+  "peerDependencies": {},
   "devDependencies": {
     "babel-core": "^6.26.0",
     "babel-loader": "^7.1.4",
