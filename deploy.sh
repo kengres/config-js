@@ -6,5 +6,5 @@ npm run patch
 echo "push to git..."
 git push
 echo "publishing..."
-npm run publish
+npm run pub
 echo "end..."
