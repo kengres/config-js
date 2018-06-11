@@ -1,8 +1,19 @@
 {
   "name": "@kengres/config",
   "version": "1.0.9",
-  "description": "",
+  "description": "Reusable functions, sass mixins, reusable css and more.",
+  "keywords": [
+    "javascript",
+    "sass",
+    "reusable",
+    "functions"
+  ],
+  "homepage": "https://github.com/kengres/config-js#readme",
   "main": "lib/js/index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/kengres/config-js"
+  },
   "scripts": {
     "test": "webpack ./src/index.js ./dist/bundle.js --mode=development",
     "build": "webpack --config webpack.config.js --mode=development",
@@ -12,7 +23,7 @@
     "minor": "npm version minor",
     "major": "npm version major"
   },
-  "author": "",
+  "author": "kenguruka greviss <kenguruka24@gmail.com> (http://me.kenguruka.ru/)",
   "license": "ISC",
   "dependencies": {},
   "peerDependencies": {},
