@@ -1,0 +1,26 @@
+.text {
+  &__cap {
+    text-transform: capitalize;
+  }
+  &__upp {
+    text-transform: uppercase;
+  }
+  &__low {
+    text-transform: lowercase;
+  }
+  &__pink {
+    color: rgb(255, 192, 203);
+  }
+  &__white {
+    color: #ffffff;
+  }
+  &__right {
+    text-align: right;
+  }
+  &__left {
+    text-align: left;
+  }
+  &__justify {
+    text-align: justify;
+  }
+}
