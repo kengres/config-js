@@ -1,0 +1,30 @@
+// visible 
+@import '../mixins/media';
+.visible {
+  &__none {
+    display: none !important;
+  }
+  &__sp {
+    @include for('small-phone-and-up') {
+      display: none !important;
+    }
+  }
+  &__sm {
+    @include for('phone-and-up') {
+      display: none !important;
+    }
+  }
+}
+// hide
+.hide {
+  &__sp { // small phone 319px
+    @include for('small-phone-only') {
+     display: none !important;
+    }
+  }
+  &__sm { // phone 599px
+    @include for('phone-and-down') {
+     display: none !important;
+    }
+  }
+}

@@ -1,0 +1,39 @@
+.page {
+  &-enter {
+    opacity: 0;
+    transform: translateX(100%);
+
+    &-active {
+      transition: all .5s ease-in-out;
+    }
+  }
+
+  &-leave {
+    &-active {
+      transition: all .3s ease-in-out;
+    }
+  }
+  &-leave-to {
+    opacity: 0;
+    transform: translateX(-100%);
+  }
+}
+
+.fadeIn {
+  &-enter {
+    opacity: 0;
+
+    &-active, &-leave-to {
+      transition: all .4s ease-in-out;
+    }
+  }
+
+  &-leave {
+    &-active {
+      transition: all .4s ease-in-out;
+    }
+  }
+  &-leave-to {
+    opacity: 0;
+  }
+}

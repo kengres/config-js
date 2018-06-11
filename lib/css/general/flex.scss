@@ -1,0 +1,41 @@
+.flex {
+  display: flex;
+
+  &__center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  // justify
+  &__jcc {
+    justify-content: center;
+  }
+  &__jcsb {
+    justify-content: space-between;
+  }
+  &__jcsa {
+    justify-content: space-around;
+  }
+  &__jcfe {
+    justify-content: flex-end;
+  }
+  &__jcfs {
+    justify-content: flex-start;
+  }
+  // align items
+  &__aic {
+    align-items: center;
+  }
+  &__aife {
+    align-items: flex-end;
+  }
+  // directions
+  &__dc {
+    flex-direction: column;
+  }
+  // wrap
+  &__ww {
+    flex-wrap: wrap;
+  }
+}
