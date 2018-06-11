@@ -1,0 +1,9 @@
+body {
+  .el-message, .el-message-box {
+    @media(max-width: 380px){
+      min-width: 100px;
+      width: 100%;
+      max-width: 90vw;
+    }
+  }
+}
