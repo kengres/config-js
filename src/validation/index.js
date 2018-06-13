@@ -10,14 +10,24 @@ function matchAlphaNumeric (rule, value, callback, source, options) {
   }
 };
 
+var requiredField = [
+  { required: true, message: 'Please fill this field', trigger: 'blur' }
+];
+
+var validateEmail = [
+  { required: true, message: 'email is required!', trigger: 'blur' },
+  { type: 'email', message: 'invalid email', trigger: 'blur' }
+];
+
 var validateName = [
   { required: true, message: 'Please fill this field!', trigger: 'blur' },
   { min: 3, max: 100, message: 'Length should be 3 to 100', trigger: 'blur' },
   { validator: matchAlphaNumeric, trigger: 'blur' }
 ];
 
-var requiredField = [
-  { required: true, message: 'Please fill this field', trigger: 'blur' }
+var validatePhone = [
+  { required: true, message: 'Please input number', trigger: 'blur' },
+  { validator: validatePhoneNumber }
 ];
 
 function validatePhoneNumber (rule, value, callback) {
@@ -35,14 +45,11 @@ function validatePhoneNumber (rule, value, callback) {
     }
   }
 };
-var validatePhone = [
-  { required: true, message: 'Please input number', trigger: 'blur' },
-  { validator: validatePhoneNumber }
-];
 
 module.exports = {
   matchAlphaNumeric: matchAlphaNumeric,
   requiredField: requiredField,
+  validateEmail: validateEmail,
   validateName: validateName,
   validatePhone: validatePhone,
   validatePhoneNumber: validatePhoneNumber,
