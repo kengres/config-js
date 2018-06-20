@@ -4,6 +4,10 @@ $tablet: 899px;
 $desktop: 1199px;
 $big-desktop: 1799px;
 
+// true media
+$trueDesktop: 1023px;
+$trueTablet: 767px;
+
 @mixin for($media) {
   @if $media == 'small-phone-only' {
     @media only screen and (max-width: $small-phone) {
@@ -37,8 +41,18 @@ $big-desktop: 1799px;
     }
   }
 
+  @else if $media == 'true-tablet-and-up' {
+    @media only screen and (min-width: $trueTablet + 1) {
+      @content;
+    }
+  }
   @else if $media == 'tablet-and-up' {
     @media only screen and (min-width: $tablet + 1) {
+      @content;
+    }
+  }
+  @else if $media == 'true-desktop-and-up' {
+    @media only screen and (min-width: $trueDesktop + 1) {
       @content;
     }
   }
