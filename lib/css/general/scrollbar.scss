@@ -1,7 +1,16 @@
 // scrollbar
+@import '../mixins/media';
+
 ::-webkit-scrollbar {
-  font-size: 5px;
+  font-size: 2px;
+  @include for('small-phone-and-up') {
+    font-size: 3px;
+  }
+  @include for('phone-and-up') {
+    font-size: 5px;
+  }
   width: 1em;
+
   &-thumb {
     background: #333;
     border-radius: .5em;
