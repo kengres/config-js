@@ -40,7 +40,12 @@ $trueTablet: 767px;
       @content;
     }
   }
-
+  @else if $media == 'tablet-and-down' {
+    @media only screen and 
+      (max-width: $tablet) {
+      @content;
+    }
+  }
   @else if $media == 'true-tablet-and-up' {
     @media only screen and (min-width: $trueTablet + 1) {
       @content;
