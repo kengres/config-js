@@ -46,6 +46,13 @@ $trueTablet: 767px;
       @content;
     }
   }
+  @else if $media == 'tablet-only' {
+    @media only screen and 
+      (min-width: $phone + 1) and
+      (max-width: $tablet) {
+      @content;
+    }
+  }
   @else if $media == 'true-tablet-and-up' {
     @media only screen and (min-width: $trueTablet + 1) {
       @content;
